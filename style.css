@@ -47,8 +47,10 @@ body{
 }
 @media screen and (max-width: 768px){
     .wrap{
-        padding: 0 24px;
         width: 100%;
+    }
+    .wrap div{
+        margin: 0 24px;
     }
 }
 
