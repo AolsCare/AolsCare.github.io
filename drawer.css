@@ -1,0 +1,102 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+/* The side navigation menu */
+.sidenav {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: #3B51A6;
+    z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+ right: 0; /* Black*/
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* sidenav links */
+  .sidenav a {
+    display: block;
+    color: black;
+    font-size: 17px;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidenav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidenav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  
+  
+  /* On screens that are less than 700px wide, make the sidenav into a topbar */
+  @media screen and (min-width: 720px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+    div.content {margin-left: 0;}
+    .sidenav .closebtn {display: none;}
+    #openbtn{display: none;}
+    }
+  
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #openbtn img{
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #account a {
+    display: block;
+    color: black;
+    padding: 16px;
+    width: max-content;
+    font-size: 17px;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  #account a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  #account a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  #account{
+    display: flex;
+  }
