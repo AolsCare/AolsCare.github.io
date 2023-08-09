@@ -5,7 +5,7 @@ class GameManager {
     this.gameDimensions = gameDimensions;
     this.GameBody = new GameBody(this);
     this.Pieces = new Pieces(this);
-    this.touchListener = new TouchListener(this);
+   // this.touchListener = new TouchListener(this);
     this.mouseListener = new MouseListener(this);
     this.playerTurn = "player1";
   }
